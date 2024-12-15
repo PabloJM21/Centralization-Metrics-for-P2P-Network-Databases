@@ -31,8 +31,9 @@ Where:
 - $$x_i$$: Center of each degree bin.
 - $$w_i$$: Average frequency of nodes in bin \( i \).
 - $$\mu_w$$: Weighted mean of the degree distribution, calculated as:
-  
-  $$\mu_w = \frac{\sum_{i} w_i \cdot x_i}{\sum_{i} w_i}$$
+  ```math
+  \mu_w = \frac{\sum_{i} w_i \cdot x_i}{\sum_{i} w_i}$$
+  ```
     
 - **Output**: A weighted variance of the degree distribution, indicating how evenly connectivity is spread across the network.
 
