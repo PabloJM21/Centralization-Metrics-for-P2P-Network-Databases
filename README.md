@@ -18,7 +18,21 @@ The analysis helps to identify potential centralization bottlenecks in P2P overl
 - **Steps**:
   1. Extract the neighbors of each node.
   2. Calculate the degree of each node (number of neighbors).
-  3. Analyze the frequency distribution of node degrees and compute variance to assess centralization.  
+  3. Analyze the frequency distribution of node degrees and compute variance to assess centralization.
+  4. 4. Calculate the **weighted variance** of the degree distribution to assess centralization.
+
+**Formula**:  
+The **weighted variance** \( \sigma_w^2 \) is computed as:  
+\[
+\sigma_w^2 = \frac{\sum_{i} w_i \cdot (x_i - \mu_w)^2}{\sum_{i} w_i}
+\]  
+Where:
+- \( x_i \): Center of each degree bin.
+- \( w_i \): Average frequency of nodes in bin \( i \).
+- \( \mu_w \): Weighted mean of the degree distribution, calculated as:
+  \[
+  \mu_w = \frac{\sum_{i} w_i \cdot x_i}{\sum_{i} w_i}
+  \]  
 - **Output**: A weighted variance of the degree distribution, indicating how evenly connectivity is spread across the network.
 
 ---
