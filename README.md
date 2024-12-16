@@ -18,8 +18,8 @@ The analysis helps to identify potential centralization bottlenecks in P2P overl
 - **Steps**:
   1. Extract the neighbors of each node.
   2. Calculate the degree of each node (number of neighbors).
-  3. Analyze the frequency distribution of node degrees and compute variance to assess centralization.
-  4. 4. Calculate the **weighted variance** of the degree distribution to assess centralization.
+  3. Analyze the frequency distribution of node degrees.
+  4. Calculate the **weighted variance** of the degree distribution to assess centralization.
 
 **Formula**:  
 The **weighted variance** $\sigma_w^2$ is computed as:  
@@ -43,13 +43,14 @@ Where:
 ---
 
 ### 2. **Latency-Based Distribution**
-**Purpose**: Analyzes centralization based on latency in network communication.  
-- Nodes with consistently lower latencies may act as de facto hubs for routing and communication.  
+**Purpose**: Analyzes centralization based on the uptime of the nodes during crawling.  
+- Nodes with low crawl durations indicate connectivity issues.
+- Networks with a high variance in crawl durations indicate inconsistency in the reliability of the nodes.  
 - **Steps**:
-  1. Compute average latency (e.g., `dial_duration`, `crawl_duration`) for each node.
-  2. Analyze the distribution of latencies across all nodes.
-  3. Identify outliers with significantly low or high latencies.  
-- **Output**: Variance or other statistical summaries of latency distributions.
+  1. Compute average latency (e.g.`crawl_duration`) for each node.
+  2. Compute the variance of these latencies.
+   
+- **Output**: Variance of latency distributions.
 
 ---
 
@@ -62,7 +63,51 @@ Where:
   3. Analyze the percentage of nodes controlled by the top ISPs.  
 - **Output**: Gini coefficient or percentage of nodes controlled by the top ISPs.
 
+#### Steps in Variance Calculation
+
+Variance is a measure of the dispersion or spread in a set of data points, indicating how far the values deviate from the mean. Below are the steps involved in computing variance:
+
+### 1. Calculate the Mean (Average)
+The mean is computed as:
+```math
+\text{Mean} = \frac{\sum_{i=1}^n f_i}{n}
+```
+Where:
+- $f_i$: Frequency of the $i$-th data point (e.g., a country’s occurrence).
+- $n$: Total number of data points.
+
 ---
+
+### 2. Compute the Deviations
+For each data point, calculate the difference between its value and the mean:
+```math
+\text{Deviation for } f_i = f_i - \text{Mean}
+```
+
+---
+
+### 3. Square the Deviations
+Square each deviation to eliminate negative values:
+```math
+(\text{Deviation for } f_i)^2 = (f_i - \text{Mean})^2
+```
+
+---
+
+### 4. Average the Squared Deviations
+Sum all squared deviations and divide by $n - 1$ (sample variance):
+```math
+\text{Variance} = \frac{\sum_{i=1}^n (f_i - \text{Mean})^2}{n - 1}
+```
+
+This gives a single numerical value representing the spread of the data points.
+
+---
+
+
+
+
+
 
 ## Results
 
