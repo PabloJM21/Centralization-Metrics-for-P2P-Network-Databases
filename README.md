@@ -76,7 +76,7 @@ Where:
 - $f_i$: Frequency of the $i$-th data point (e.g., a country’s occurrence).
 - $n$: Total number of data points.
 
----
+
 
 ### 2. Compute the Deviations
 For each data point, calculate the difference between its value and the mean:
@@ -84,7 +84,7 @@ For each data point, calculate the difference between its value and the mean:
 \text{Deviation for } f_i = f_i - \text{Mean}
 ```
 
----
+
 
 ### 3. Square the Deviations
 Square each deviation to eliminate negative values:
@@ -92,7 +92,7 @@ Square each deviation to eliminate negative values:
 (\text{Deviation for } f_i)^2 = (f_i - \text{Mean})^2
 ```
 
----
+
 
 ### 4. Average the Squared Deviations
 Sum all squared deviations and divide by $n - 1$ (sample variance):
