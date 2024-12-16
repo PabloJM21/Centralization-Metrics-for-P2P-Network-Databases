@@ -78,14 +78,22 @@ weighted variance: 7151.645454149878
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
 
-weighted Distribution: 43146.03780494059
+weighted variance: 43146.03780494059
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
 
-weighted Distribution: 306545.76279855054
+weighted variancen: 306545.76279855054
 
 
+### 2. **Latency-Based Distribution**
 
+
+| Database          | avg.crawl duration variance |
+|-------------------|-----------------------------|
+| IPFS              | 215.2023919892557           |
+| Filecoin          | 137.9478481490786           |
+| Polkadot          | 242.98945260622315          |
+| Avail Mainnet     | 315.3813616571848           |
 
 
 
