@@ -38,6 +38,8 @@ Where:
     
 - **Output**: A weighted variance of the degree distribution, indicating how evenly connectivity is spread across the network.
 
+![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
+
 ---
 
 ### 2. **Latency-Based Distribution**
