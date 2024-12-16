@@ -38,7 +38,7 @@ Where:
     
 - **Output**: A weighted variance of the degree distribution, indicating how evenly connectivity is spread across the network.
 
-![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
+
 
 ---
 
@@ -63,6 +63,31 @@ Where:
 - **Output**: Gini coefficient or percentage of nodes controlled by the top ISPs.
 
 ---
+
+## Results
+
+### 1. **Degree Distribution**
+
+![Degree Distribution Plot](images/bins_degree_distribution_nebula_polkadot.png "Degree Distribution")
+
+weighted variance: 27553.19049212474
+
+![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
+
+weighted variance: 7151.645454149878
+
+![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
+
+weighted Distribution: 43146.03780494059
+
+![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
+
+weighted Distribution: 306545.76279855054
+
+
+
+
+
 
 ## Repository Structure
 
