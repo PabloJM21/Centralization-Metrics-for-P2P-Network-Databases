@@ -237,19 +237,19 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_polkadot.png "Degree Distribution")
 
-**Degree Centrality** : 0.7534748991665159
+**Degree Centrality** : 0.753
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
 
-**Degree Centrality*** : 0.6032004702492765
+**Degree Centrality** : 0.603
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
 
-**Degree Centrality** : 0.8082967375742667
+**Degree Centrality** : 0.808
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
 
-**Degree Centrality** : 0.8839550069519817
+**Degree Centrality** : 0.884
 
 
 ### 2. **Latency-Based Distribution**
@@ -257,10 +257,10 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 | Database                 | avg.crawl duration variance |
 |--------------------------|-----------------------------|
-| nebula_ipfs              | 215.2023919892557           |
-| nebula_filecoin          | 137.9478481490786           |
-| nebula_polkadot          | 242.98945260622315          |
-| nebula_avail_mainnet     | 315.3813616571848           |
+| nebula_ipfs              | 215.202                     |
+| nebula_filecoin          | 137.948                     |
+| nebula_polkadot          | 242.989                     |
+| nebula_avail_mainnet     | 315.381                     |
 
 
 ### 3. **Country Centralization**
@@ -268,10 +268,10 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 | **Database**             | **Gini Coefficient** |
 |--------------------------|----------------------|
-| **nebula_ipfs**          | 0.9271677524899562   |
-| **nebula_filecoin**      | 0.9336771843702092   |
-| **nebula_polkadot**      | 0.9297219045867163   |
-| **nebula_avail_mainnet** | 0.7717051753735453   |
+| **nebula_ipfs**          | 0.927                |
+| **nebula_filecoin**      | 0.934                |
+| **nebula_polkadot**      | 0.930                |
+| **nebula_avail_mainnet** | 0.772                |
 
 
 
@@ -280,10 +280,10 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 | Database                | Gini Coefficient |
 |-------------------------|------------------|
-| nebula_ipfs             | 0.9363           |
-| nebula_filecoin         | 0.9452           |
-| nebula_polkadot         | 0.9744           |
-| nebula_avail_mainnet    | 0.4613           |
+| nebula_ipfs             | 0.936            |
+| nebula_filecoin         | 0.945            |
+| nebula_polkadot         | 0.974            |
+| nebula_avail_mainnet    | 0.461            |
 
 ## Repository Structure
 
