@@ -31,12 +31,12 @@ Consider an undirected graph $G = (V, E)$, where:
 - $V$: set of nodes (vertices).
 - $E$: set of edges connecting nodes in $V$.
 
-The total number of nodes is $ N = |V| $.
+The total number of nodes is $N = |V|$.
 
 
 
 #### **Degree of a Node**
-The **degree** of a node $ i $, denoted as $ d(i) $, is the number of edges connected to it.
+The **degree** of a node $i$, denoted as $d(i)$, is the number of edges connected to it.
 
 ```math
 d(i) = |\{j \in V : \{i, j\} \in E \}|
@@ -62,12 +62,12 @@ C^* = \frac{\sum_{i=1}^{N} \left( C_{\text{max}} - C_D(i) \right)}{(N - 1)(C_{\t
 ```
 
 Where:
-- $ C_{\text{max}} $: maximum degree centrality in the graph.
-- $ C_D(i) $: degree centrality of node $ i $.
+- $C_{\text{max}}$: maximum degree centrality in the graph.
+- $C_D(i)$: degree centrality of node $i$.
 
 This normalizes the centralization score to a value between 0 and 1, where:
-- $ C^* = 1 $ indicates a star graph (one central node connected to all others).
-- $ C^* = 0 $ indicates a completely regular graph (e.g., all nodes have the same degree).
+- $C^* = 1$ indicates a star graph (one central node connected to all others).
+- $C^* = 0$ indicates a completely regular graph (e.g., all nodes have the same degree).
 
 
 
@@ -87,22 +87,17 @@ This normalizes the centralization score to a value between 0 and 1, where:
 
 ---
 
-### 3. **IP Address Centralization**
+### 3. **Country Centralization**
 
-**Purpose**: Analyzes how nodes in the network are distributed across IPv4 and IPv6 address prefixes.  
-
-- **Centralization in Address Prefixes**:  
-  IP address prefixes represent logical groupings of addresses, reflecting how networks are allocated across geographical regions or organizations. Centralization in these prefixes can reveal the extent to which network traffic or resources are concentrated within a few address ranges.  
+**Purpose**: Analyzes how nodes in the network are distributed across countries
 
 - **Steps**:  
-  1. **Extract Address Prefixes**:  
-      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`).  
-      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`).  
-  2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
-  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
+  1. **Extract Countries**:   
+  2. **Count Country Frequencies**: Compute the number of nodes associated with each country.  
+  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in countries.
+ 
+  
 
-- **Output**:  
-  Gini coefficient provides a quantifiable view of IP address centralization. These insights help identify regions or organizations that dominate the network, potentially exposing vulnerabilities or bottlenecks.
 
 
 
@@ -208,6 +203,30 @@ The Gini coefficient is computed as:
 ```math
 G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
+
+
+---
+
+### 4. **IP Address Centralization**
+
+**Purpose**: Analyzes how nodes in the network are distributed across IPv4 and IPv6 address prefixes.  
+
+- **Centralization in Address Prefixes**:  
+  IP address prefixes represent logical groupings of addresses, reflecting how networks are allocated across geographical regions or organizations. Centralization in these prefixes can reveal the extent to which network traffic or resources are concentrated within a few address ranges.  
+
+- **Steps**:  
+  1. **Extract Address Prefixes**:  
+      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`).  
+      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`).  
+  2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
+  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
+
+- **Output**:  
+  Gini coefficient provides a quantifiable view of IP address centralization. These insights help identify regions or organizations that dominate the network, potentially exposing vulnerabilities or bottlenecks.
+
+
+
+
 ---
 
 
