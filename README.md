@@ -221,8 +221,6 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
   2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
   3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
 
-- **Output**:  
-  Gini coefficient provides a quantifiable view of IP address centralization. These insights help identify regions or organizations that dominate the network, potentially exposing vulnerabilities or bottlenecks.
 
 
 
@@ -239,19 +237,19 @@ G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_polkadot.png "Degree Distribution")
 
-weighted variance: 27553.19049212474
+**Degree Centrality** : 0.7534748991665159
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
 
-weighted variance: 7151.645454149878
+**Degree Centrality*** : 0.6032004702492765
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
 
-weighted variance: 43146.03780494059
+**Degree Centrality** : 0.8082967375742667
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
 
-weighted variancen: 306545.76279855054
+**Degree Centrality** : 0.8839550069519817
 
 
 ### 2. **Latency-Based Distribution**
