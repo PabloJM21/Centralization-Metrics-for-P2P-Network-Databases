@@ -54,19 +54,31 @@ Where:
 
 ---
 
-### 3. **ISP Centralization**
-**Purpose**: Examines how nodes in the network are distributed across Internet Service Providers (ISPs).  
-- ISP centralization can lead to bottlenecks if a small number of ISPs control a significant portion of network traffic.  
-- **Steps**:
-  1. Map each node’s IP address to its ISP.
-  2. Compute the distribution of nodes across ISPs.
-  3. Analyze the percentage of nodes controlled by the top ISPs.  
-- **Output**: Gini coefficient or percentage of nodes controlled by the top ISPs.
+### 3. **IP Address Centralization**
 
-#### **Steps to Compute the Gini Coefficient**
+**Purpose**: Analyzes how nodes in the network are distributed across IPv4 and IPv6 address prefixes.  
+
+- **Centralization in Address Prefixes**:  
+  IP address prefixes represent logical groupings of addresses, reflecting how networks are allocated across geographical regions or organizations. Centralization in these prefixes can reveal the extent to which network traffic or resources are concentrated within a few address ranges.  
+
+- **Steps**:  
+  1. **Extract Address Prefixes**:  
+      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`).  
+      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`).  
+  2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
+  3. **Quantify Centralization**: Apply metrics to evaluate how address prefixes are distributed, such as:  
+      - **Gini Coefficient**: Measures inequality in prefix frequencies, with higher values indicating greater concentration.  
+      - **Top Prefix Contribution**: Calculate the percentage of nodes associated with the most frequent prefixes.  
+
+- **Output**:  
+  Metrics such as the Gini coefficient or the proportion of nodes associated with the top prefixes provide a quantifiable view of IP address centralization. These insights help identify regions or organizations that dominate the network, potentially exposing vulnerabilities or bottlenecks.
+
+
+
+
+### **Steps to Compute the Gini Coefficient**
 
 The following outlines the step-by-step process for calculating the Gini coefficient:
-
 
 
 #### **Flatten the Array**
