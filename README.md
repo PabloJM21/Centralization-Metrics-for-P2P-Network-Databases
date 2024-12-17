@@ -192,7 +192,7 @@ Get the total number of elements \( n \).
 **Step 3: Compute the Gini Coefficient**
 
 ```math
-G = \frac{Weighted Sum}{Denominator} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
+G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
 
 
