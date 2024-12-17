@@ -94,7 +94,7 @@ This normalizes the centralization score to a value between 0 and 1, where:
 - **Steps**:  
   1. **Extract Countries**:   
   2. **Count Country Frequencies**: Compute the number of nodes associated with each country.  
-  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in countries.
+  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in country frequencies.
  
   
 
