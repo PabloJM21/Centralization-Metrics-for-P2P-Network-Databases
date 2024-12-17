@@ -190,10 +190,9 @@ Get the total number of elements \( n \).
 ```
 
 **Step 3: Compute the Gini Coefficient**
-`return weighted_sum / denominator`
 
 ```math
-G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
+G = \frac{weighted_sum}{denominator} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
 
 
