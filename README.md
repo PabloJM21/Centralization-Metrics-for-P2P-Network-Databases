@@ -63,47 +63,109 @@ Where:
   3. Analyze the percentage of nodes controlled by the top ISPs.  
 - **Output**: Gini coefficient or percentage of nodes controlled by the top ISPs.
 
-#### Steps in Variance Calculation
+#### **Steps to Compute the Gini Coefficient**
 
-Variance is a measure of the dispersion or spread in a set of data points, indicating how far the values deviate from the mean. Below are the steps involved in computing variance:
+The following outlines the step-by-step process for calculating the Gini coefficient:
 
-### 1. Calculate the Mean (Average)
-The mean is computed as:
+
+
+#### **Flatten the Array**
+`array = array.flatten()`
+
+- **Purpose**: Ensure the input is a 1D array.
+- **Result**: If the input is multidimensional, it becomes:
+  \[
+  x = [x_1, x_2, \dots, x_n]
+  \]
+
+
+
+#### **Handle Negative Values**
+`if np.amin(array) < 0: array -= np.amin(array)`
+
+- **Purpose**: Adjust the array to remove any negative values.
+- **Result**: Shift all elements so the minimum value becomes zero:
+  \[
+  x_i = x_i - \min(x) \quad \forall \, x_i \in x
+  \]
+
+
+
+#### **Avoid Zero Values**
+`array = array + 0.0000001`
+
+- **Purpose**: Add a small constant (\( \epsilon \)) to prevent division errors or issues with zeros.
+- **Result**: 
+  \[
+  x_i = x_i + \epsilon \quad \forall \, x_i \in x
+  \]
+
+
+
+#### **Sort the Array**
+`array = np.sort(array)`
+
+- **Purpose**: Sort the array in ascending order.
+- **Result**: 
+  \[
+  x_1 \leq x_2 \leq \ldots \leq x_n
+  \]
+
+
+
+#### **Compute Index Values**
+`index = np.arange(1, array.shape[0] + 1)`
+
+- **Purpose**: Assign indices \( i \) to each sorted element.
+- **Result**:
+  \[
+  \text{index} = [1, 2, \dots, n]
+  \]
+
+
+
+#### **Total Number of Elements**
+`n = array.shape[0]`
+
+- **Purpose**: Get the total number of elements \( n \).
+- **Result**:
+  \[
+  n = \text{len}(x)
+  \]
+
+
+
+#### **Calculate the Gini Coefficient**
+
+**Step 1: Compute the Weighted Sum**
+
+
 ```math
-\text{Mean} = \frac{\sum_{i=1}^n f_i}{n}
+\text{Weighted Sum} = \sum_{i=1}^{n} (2i - n - 1) \cdot x_i
 ```
-Where:
-- $f_i$: Frequency of the $i$-th data point (e.g., a country’s occurrence).
-- $n$: Total number of data points.
+
+**Step 2: Normalize by Total Array Sum**
+`denominator = n * np.sum(array)`
+
+\[
+\text{Denominator} = n \cdot \sum_{i=1}^{n} x_i
+\]
+
+**Step 3: Compute the Gini Coefficient**
+`return weighted_sum / denominator`
+
+\[
+G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
+\]
 
 
 
-### 2. Compute the Deviations
-For each data point, calculate the difference between its value and the mean:
+#### **Final Formula**
+The Gini coefficient is computed as:
 ```math
-\text{Deviation for } f_i = f_i - \text{Mean}
-```
-
-
-
-### 3. Square the Deviations
-Square each deviation to eliminate negative values:
-```math
-(\text{Deviation for } f_i)^2 = (f_i - \text{Mean})^2
-```
-
-
-
-### 4. Average the Squared Deviations
-Sum all squared deviations and divide by $n - 1$ (sample variance):
-```math
-\text{Variance} = \frac{\sum_{i=1}^n (f_i - \text{Mean})^2}{n - 1}
-```
-
-This gives a single numerical value representing the spread of the data points.
+G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 
 ---
-
 
 
 
