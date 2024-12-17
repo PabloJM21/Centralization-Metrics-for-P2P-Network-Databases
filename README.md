@@ -175,21 +175,21 @@ Get the total number of elements \( n \).
 
 #### **Calculate the Gini Coefficient**
 
-**Step 1: Compute the Weighted Sum**
+
 
 
 ```math
 \text{Weighted Sum} = \sum_{i=1}^{n} (2i - n - 1) \cdot x_i
 ```
 
-**Step 2: Normalize by Total Array Sum**
+
 
 
 ```math
 \text{Denominator} = n \cdot \sum_{i=1}^{n} x_i
 ```
 
-**Step 3: Compute the Gini Coefficient**
+
 
 ```math
 G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
@@ -197,11 +197,6 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 
 
-#### **Final Formula**
-The Gini coefficient is computed as:
-```math
-G = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
-```
 
 
 ---
