@@ -19,24 +19,57 @@ The analysis helps to identify potential centralization bottlenecks in P2P overl
   1. Extract the neighbors of each node.
   2. Calculate the degree of each node (number of neighbors).
   3. Analyze the frequency distribution of node degrees.
-  4. Calculate the **weighted variance** of the degree distribution to assess centralization.
-
-**Formula**:  
-The **weighted variance** $\sigma_w^2$ is computed as:  
-
-```math
-\sigma_w^2 = \frac{\sum_{i} w_i \cdot (x_i - \mu_w)^2}{\sum_{i} w_i}
-```
-Where:
-- $x_i$: Center of each degree bin.
-- $w_i$: Average frequency of nodes in bin \( i \).
-- $\mu_w$: Weighted mean of the degree distribution, calculated as:
+  4. Calculate the **degree centrality** of the graph to assess centralization.
   
+#### Degree Centrality in Undirected Graphs
+
+Degree centrality measures how many direct connections (or edges) a node in a graph has relative to the maximum possible number of connections. Below is the step-by-step explanation for computing degree centrality in this context:
+
+
+#### **Graph Setup**
+Consider an undirected graph $G = (V, E)$, where:
+- $V$: set of nodes (vertices).
+- $E$: set of edges connecting nodes in $V$.
+
+The total number of nodes is $ N = |V| $.
+
+
+
+#### **Degree of a Node**
+The **degree** of a node $ i $, denoted as $ d(i) $, is the number of edges connected to it.
+
 ```math
-\mu_w = \frac{\sum_{i} w_i \cdot x_i}{\sum_{i} w_i}
+d(i) = |\{j \in V : \{i, j\} \in E \}|
 ```
-    
-- **Output**: A weighted variance of the degree distribution, indicating how evenly connectivity is spread across the network.
+
+
+
+#### **Degree Centrality**
+Degree centrality \( C_D(i) \) for a node \( i \) is the ratio of its degree \( d(i) \) to the maximum possible degree in the graph \( N - 1 \), which occurs when the node is connected to all other nodes in \( V \).
+
+```math
+C_D(i) = \frac{d(i)}{N - 1}
+```
+
+
+
+#### **Degree Centralization**
+Degree centralization measures the inequality of degree centrality across all nodes in the graph. It captures how central the most connected node is relative to others.
+
+#### Formula:
+```math
+C^* = \frac{\sum_{i=1}^{N} \left( C_{\text{max}} - C_D(i) \right)}{(N - 1)(C_{\text{max}} - 0)}
+```
+
+Where:
+- $ C_{\text{max}} $: maximum degree centrality in the graph.
+- $ C_D(i) $: degree centrality of node $ i $.
+
+This normalizes the centralization score to a value between 0 and 1, where:
+- $ C^* = 1 $ indicates a star graph (one central node connected to all others).
+- $ C^* = 0 $ indicates a completely regular graph (e.g., all nodes have the same degree).
+
+
 
 
 
