@@ -205,14 +205,23 @@ weighted variancen: 306545.76279855054
 ### 2. **Latency-Based Distribution**
 
 
-| Database          | avg.crawl duration variance |
-|-------------------|-----------------------------|
-| IPFS              | 215.2023919892557           |
-| Filecoin          | 137.9478481490786           |
-| Polkadot          | 242.98945260622315          |
-| Avail Mainnet     | 315.3813616571848           |
+| Database                 | avg.crawl duration variance |
+|--------------------------|-----------------------------|
+| nebula_ipfs              | 215.2023919892557           |
+| nebula_filecoin          | 137.9478481490786           |
+| nebula_polkadot          | 242.98945260622315          |
+| nebula_avail_mainnet     | 315.3813616571848           |
 
 
+### 3. **IP-Adress Centralization**
+
+
+| Database                | Gini Coefficient |
+|-------------------------|------------------|
+| nebula_ipfs             | 0.9363           |
+| nebula_filecoin         | 0.9452           |
+| nebula_polkadot         | 0.9744           |
+| nebula_avail_mainnet    | 0.4613           |
 
 ## Repository Structure
 
