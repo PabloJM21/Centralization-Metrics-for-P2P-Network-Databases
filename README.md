@@ -81,9 +81,27 @@ This normalizes the centralization score to a value between 0 and 1, where:
 - Networks with a high variance in crawl durations indicate inconsistency in the reliability of the nodes.  
 - **Steps**:
   1. Compute average latency (e.g.`crawl_duration`) for each node.
-  2. Compute the variance of these latencies.
+  2. Compute the Entropy-Based Centrality of these latencies.
    
-- **Output**: Variance of latency distributions.
+#### Entropy-Based Centrality
+
+Entropy-Based Centrality measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network. It uses **Shannon Entropy** to quantify whether the distribution is even or centralized.
+
+#### Formula
+1. Normalize the quantity \(x_i\) for node \(i\):
+   \[
+   p_i = \frac{x_i}{\sum_{j=1}^n x_j}
+   \]
+2. Compute entropy:
+   \[
+   H = -\sum_{i=1}^n p_i \cdot \log(p_i)
+   \]
+
+#### Interpretation
+- **Higher Entropy**: Uniform distribution across nodes.
+- **Lower Entropy**: Centralized distribution dominated by a few nodes.
+Normalized entropy (\(H_{\text{normalized}} = \frac{H}{\log(n)}\)) provides insights into fairness and dominance in the distribution of resources, such as crawl durations in network analysis.
+
 
 ---
 
