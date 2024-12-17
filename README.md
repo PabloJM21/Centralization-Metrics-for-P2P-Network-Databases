@@ -265,7 +265,19 @@ weighted variancen: 306545.76279855054
 | nebula_avail_mainnet     | 315.3813616571848           |
 
 
-### 3. **IP-Adress Centralization**
+### 3. **Country Centralization**
+
+
+| **Database**             | **Gini Coefficient** |
+|--------------------------|----------------------|
+| **nebula_ipfs**          | 0.9271677524899562   |
+| **nebula_filecoin**      | 0.9336771843702092   |
+| **nebula_polkadot**      | 0.9297219045867163   |
+| **nebula_avail_mainnet** | 0.7717051753735453   |
+
+
+
+### 4. **IP-Address Centralization**
 
 
 | Database                | Gini Coefficient |
