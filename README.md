@@ -101,7 +101,7 @@ H = -\sum_{i=1}^n p_i \cdot \log(p_i)
 ```
 
 ```math
-Normalized entropy (\(H_{\text{normalized}} = \frac{H}{\log(n)}\))
+H_{\text{normalized}} = \frac{H}{\log(n)}
 ```
 
 #### Interpretation
