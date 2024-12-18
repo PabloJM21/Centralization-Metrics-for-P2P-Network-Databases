@@ -196,8 +196,8 @@ Get the total number of elements \( n \).
 
 
 
-#### **Calculate the Gini Coefficient**
 
+Compute Weighted Sum and Denominator
 
 
 
@@ -213,7 +213,7 @@ Get the total number of elements \( n \).
 ```
 
 
-
+Calculate the Gini Coefficient
 ```math
 G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
