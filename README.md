@@ -272,12 +272,12 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 ### 2. **Latency-Based Distribution**
 
 
-| Database                 | avg.crawl duration variance |
-|--------------------------|-----------------------------|
-| nebula_ipfs              | 215.202                     |
-| nebula_filecoin          | 137.948                     |
-| nebula_polkadot          | 242.989                     |
-| nebula_avail_mainnet     | 315.381                     |
+| **Database**             | **Normalized Entropy** |
+|--------------------------|------------------------|
+| nebula_ipfs              | 0.908                  |
+| nebula_filecoin          | 0.925                  |
+| nebula_polkadot          | 0.963                  |
+| nebula_avail_mainnet     | 0.991                  |
 
 
 ### 3. **Country Centralization**
@@ -285,10 +285,10 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 | **Database**             | **Gini Coefficient** |
 |--------------------------|----------------------|
-| **nebula_ipfs**          | 0.927                |
-| **nebula_filecoin**      | 0.934                |
-| **nebula_polkadot**      | 0.930                |
-| **nebula_avail_mainnet** | 0.772                |
+| nebula_ipfs              | 0.927                |
+| nebula_filecoin          | 0.934                |
+| nebula_polkadot          | 0.930                |
+| nebula_avail_mainnet     | 0.772                |
 
 
 
