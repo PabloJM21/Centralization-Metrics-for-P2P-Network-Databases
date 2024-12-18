@@ -103,7 +103,7 @@ H_{\text{normalized}} = \frac{H}{\log(n)}
 ```
 
 #### Interpretation
-- **Higher Entropy**: Uniform distribution across nodes.
+- **Higher Entropy**: $H_{\text{normalized}}=1$ indicates Uniform distribution across nodes. 
 - **Lower Entropy**: Centralized distribution dominated by a few nodes.
  
 
