@@ -89,20 +89,25 @@ Entropy-Based Centrality measures the distribution of a continuous quantity (e.g
 
 #### Formula
 1. Normalize the quantity $x_i$ for node $i$:
-2. 
-   ```math
-   p_i = \frac{x_i}{\sum_{j=1}^n x_j}
-   ```
+
+2.
+```math
+p_i = \frac{x_i}{\sum_{j=1}^n x_j}
+```
+
 3. Compute entropy:
-4. 
-   ```math
-   H = -\sum_{i=1}^n p_i \cdot \log(p_i)
-   ```
+```math
+H = -\sum_{i=1}^n p_i \cdot \log(p_i)
+```
+
+```math
+Normalized entropy (\(H_{\text{normalized}} = \frac{H}{\log(n)}\))
+```
 
 #### Interpretation
 - **Higher Entropy**: Uniform distribution across nodes.
 - **Lower Entropy**: Centralized distribution dominated by a few nodes.
-Normalized entropy (\(H_{\text{normalized}} = \frac{H}{\log(n)}\)) provides insights into fairness and dominance in the distribution of resources, such as crawl durations in network analysis.
+ 
 
 
 ---
