@@ -88,14 +88,12 @@ This normalizes the centralization score to a value between 0 and 1, where:
 Entropy-Based Centrality measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network. It uses **Shannon Entropy** to quantify whether the distribution is even or centralized.
 
 #### Formula
-1. Normalize the quantity $x_i$ for node $i$:
-
-2.
+Normalize the quantity $x_i$ for node $i$:
 ```math
 p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 ```
 
-3. Compute entropy:
+Compute entropy:
 ```math
 H = -\sum_{i=1}^n p_i \cdot \log(p_i)
 ```
