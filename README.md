@@ -305,6 +305,16 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 | nebula_avail_mainnet    | 0.387            | 855.8           |
 
 
-## Repository Structure
+### IPFS frequency bump
+
+In this section we will study the IPFS networks in more detail paying special attention to the frequency bump in Figure \ref{fig:1} in the frequency range $[50,80]$.
+
+We will start by studying the in-degree, which is the proportion of direct neighbors among all the nodes present.
+
+The neighbor type of each node, whether direct or reversed, might give information about the function of that node.
+For example, nodes without reversed neighbors likely act as clients that connect exclusively to a few other nodes acting as providers.
+At each degree we will show the frequency as before, but also the out-degree ratio.
+
+To simplify the analysis we will focus on a specific crawl.
 
 
