@@ -233,8 +233,10 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 - **Steps**:  
   1. **Extract Address Prefixes**:  
-      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`).  
-      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`).  
+      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`). This is used to represent the network portion of the address while the last part often 
+        represents the specific host in the sub-network.
+      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`). This represents the network prefix
+            and is used to group addresses into subnets. The last part often represent the specific interface
   2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
   3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
 
@@ -274,10 +276,10 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 | **Database**             | **Normalized Entropy** |
 |--------------------------|------------------------|
-| nebula_ipfs              | 0.908                  |
-| nebula_filecoin          | 0.925                  |
-| nebula_polkadot          | 0.963                  |
-| nebula_avail_mainnet     | 0.991                  |
+| nebula_ipfs              | 0.823                  |
+| nebula_filecoin          | 0.842                  |
+| nebula_polkadot          | 0.715                  |
+| nebula_avail_mainnet     | 0.932                  |
 
 
 ### 3. **Country Centralization**
