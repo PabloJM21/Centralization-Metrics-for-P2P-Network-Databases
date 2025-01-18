@@ -283,24 +283,25 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 ### 3. **Country Centralization**
 
 
-| **Database**             | **Gini Coefficient** |
-|--------------------------|----------------------|
-| nebula_ipfs              | 0.927                |
-| nebula_filecoin          | 0.934                |
-| nebula_polkadot          | 0.930                |
-| nebula_avail_mainnet     | 0.772                |
+| **Database**             | **Gini Coefficient** | Number of Peers |
+|--------------------------|----------------------|-----------------|
+| nebula_ipfs              | 0.927                | 54234.8         |
+| nebula_filecoin          | 0.934                | 2697.2          |
+| nebula_polkadot          | 0.930                | 8582.6          |
+| nebula_avail_mainnet     | 0.772                | 855.8           |
 
 
 
 ### 4. **IP-Address Centralization**
 
 
-| Database                | Gini Coefficient |
-|-------------------------|------------------|
-| nebula_ipfs             | 0.936            |
-| nebula_filecoin         | 0.945            |
-| nebula_polkadot         | 0.974            |
-| nebula_avail_mainnet    | 0.461            |
+| Database                | Gini Coefficient | Number of Peers |
+|-------------------------|------------------|-----------------|
+| nebula_ipfs             | 0.510            | 54234.8         |
+| nebula_filecoin         | 0.653            | 2697.2          |
+| nebula_polkadot         | 0.722            | 8582.6          |
+| nebula_avail_mainnet    | 0.387            | 855.8           |
+
 
 ## Repository Structure
 
