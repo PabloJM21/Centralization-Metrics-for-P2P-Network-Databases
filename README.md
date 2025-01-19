@@ -76,11 +76,11 @@ This normalizes the centralization score to a value between 0 and 1, where:
 ---
 
 ### 2. **Latency-Based Distribution**
-**Purpose**: Analyzes centralization based on the uptime of the nodes during crawling.  
-- Nodes with low crawl durations indicate connectivity issues.
-- Networks with a high variance in crawl durations indicate inconsistency in the reliability of the nodes.  
+**Purpose**: Analyzes centralization based on the uptime of the nodes during dialing.  
+- Nodes with low dial durations indicate connectivity issues.
+- Networks with a high variance in dial durations indicate inconsistency in the reliability of the nodes.  
 - **Steps**:
-  1. Compute average latency (e.g.`crawl_duration`) for each node.
+  1. Compute average latency (e.g.`dial_duration`) for each node.
   2. Compute the Entropy-Based Centrality of these latencies.
    
 #### Entropy-Based Centrality
@@ -278,10 +278,10 @@ Autonomous System Numbers are a set of Internet routable IP prefixes belonging t
 
 | **Database**             | **Normalized Entropy** |
 |--------------------------|------------------------|
-| nebula_ipfs              | 0.823                  |
-| nebula_filecoin          | 0.842                  |
-| nebula_polkadot          | 0.715                  |
-| nebula_avail_mainnet     | 0.932                  |
+| nebula_filecoin          | 0.823                  |
+| nebula_polkadot          | 0.842                  |
+| nebula_avail_mainnet     | 0.715                  |
+| nebula_ipfs              | 0.932                  |
 
 
 ### 3. **Country Centralization**
