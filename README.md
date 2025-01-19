@@ -240,7 +240,9 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
   2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
   3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
 
+### 5. ASN centralization
 
+Autonomous System Numbers are a set of Internet routable IP prefixes belonging to a network or a collection of networks that are all controlled by a single entity or organization.
 
 
 
@@ -303,6 +305,16 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 | nebula_filecoin         | 0.653            | 2697.2          |
 | nebula_polkadot         | 0.722            | 8582.6          |
 | nebula_avail_mainnet    | 0.387            | 855.8           |
+
+### 5. ASN centralization
+
+| Database                | Gini Coefficient | Number of Peers |
+|-------------------------|------------------|-----------------|
+| nebula_ipfs             | 0.981            | 54234.8         |
+| nebula_filecoin         | 0.946            | 2697.2          |
+| nebula_polkadot         | 0.986            | 8582.6          |
+| nebula_avail_mainnet    | 0.819            | 855.8           |
+
 
 
 ### IPFS frequency bump
