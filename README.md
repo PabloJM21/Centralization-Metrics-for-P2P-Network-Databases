@@ -272,6 +272,17 @@ Autonomous System Numbers are a set of Internet routable IP prefixes belonging t
 
 **Degree Centrality** : 0.884
 
+#### Degree Centralization
+
+| Database             | Average Outdegree Centralization | Average Indegree Centralization | Average Combined Centralization |
+|----------------------|----------------------------------|---------------------------------|---------------------------------|
+| nebula_polkadot      | 0.3775987407324174               | 0.8680617773418075              | 0.7534748991665159              |
+| nebula_avail_mainnet | 0.46646691255370865              | 0.8126559646808958              | 0.6032004702492765              |
+| nebula_filecoin      | 0.1288622284762083               | 0.8760253163057948              | 0.8082967375742667              |
+| nebula_ipfs          | 0.2733879750343379               | 0.9311056291795552              | 0.8839550069519817              |
+
+
+
 
 ### 2. **Latency-Based Distribution**
 
