@@ -338,6 +338,7 @@ The neighbor type of each node, whether direct or reversed, might give informati
 For example, nodes without reversed neighbors likely act as clients that connect exclusively to a few other nodes acting as providers.
 At each degree we will show the frequency as before, but also the out-degree ratio.
 
-To simplify the analysis we will focus on a specific crawl.
+To simplify the analysis we will focus on one crawl.
 
+![Degree Distribution Plot](images/filtered_neighbors_nebula_ipfs_19604.png "Degree Distribution")
 
