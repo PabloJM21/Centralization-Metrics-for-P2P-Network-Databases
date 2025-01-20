@@ -363,7 +363,7 @@ Starting with IP-Address Centralization, we will extract the address prefixes as
 | Filtered  | 0.215            | 1473            |
 
 
-As we can see in the Table, the filtered dataset is still bigger the avail mainnet we saw in Table \ref{tab:avg_gini_nodes}. However the Gini Coefficient is lower, meaning lower inequality in the address prefixes. 
+As we can see in the Table, the filtered dataset is still bigger than the avail mainnet we saw before. However the Gini Coefficient is lower, meaning lower inequality in the address prefixes. 
 
 So despite having more peers, this subset of the IPFS network has more variety of IP address prefixes.
 
