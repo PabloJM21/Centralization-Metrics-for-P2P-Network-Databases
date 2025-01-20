@@ -115,7 +115,7 @@ H_{\text{normalized}} = \frac{H}{\log(n)}
 **Purpose**: Analyzes how nodes in the network are distributed across countries
 
 - **Steps**:  
-  1. **Extract Countries**:   
+  1. **Extract Countries**   
   2. **Count Country Frequencies**: Compute the number of nodes associated with each country.  
   3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in country frequencies.
  
@@ -242,9 +242,14 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 ### 5. ASN centralization
 
-Autonomous System Numbers are a set of Internet routable IP prefixes belonging to a network or a collection of networks that are all controlled by a single entity or organization.
+Autonomous System Numbers are a set of Internet routable IP prefixes representing a collection of networks that are all controlled by a single entity.
 
+**Purpose**: Analyzes how nodes in the network are distributed across ASNs.
 
+- **Steps**:  
+  1. **Extract ASNs**   
+  2. **Count ASN Frequencies**: Compute the number of nodes associated with each ASN.  
+  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in ASN frequencies.
 
 ---
 
