@@ -258,19 +258,19 @@ Autonomous System Numbers are a set of Internet routable IP prefixes belonging t
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_polkadot.png "Degree Distribution")
 
-**Degree Centrality** : 0.753
+**Degree Centralization** : 0.753
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
 
-**Degree Centrality** : 0.603
+**Degree Centralization** : 0.603
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
 
-**Degree Centrality** : 0.808
+**Degree Centralization** : 0.808
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
 
-**Degree Centrality** : 0.884
+**Degree Centralization** : 0.884
 
 #### Degree Centralization
 
@@ -282,7 +282,7 @@ Autonomous System Numbers are a set of Internet routable IP prefixes belonging t
 | nebula_ipfs          | 0.2733879750343379               | 0.9311056291795552              | 0.8839550069519817              |
 
 
-
+The table displays the degree centralization rate for the Outdegree, Indegree and the combination of both. We realize that the Outdegree exhibits lower centralization scores reflecting a more decentralized structure, while the Indegree's high centralization scores are much higher, hence the total network has a more centralized structure.  
 
 ### 2. **Latency-Based Distribution**
 
@@ -330,7 +330,7 @@ Autonomous System Numbers are a set of Internet routable IP prefixes belonging t
 
 ### IPFS frequency bump
 
-In this section we will study the IPFS networks in more detail paying special attention to the frequency bump in Figure \ref{fig:1} in the frequency range $[50,80]$.
+In this section we will study the IPFS networks in more detail paying special attention to the frequency bump in the range $[50,80]$.
 
 We will start by studying the in-degree, which is the proportion of direct neighbors among all the nodes present.
 
@@ -343,9 +343,31 @@ To simplify the analysis we will focus on one crawl.
 ![Degree Distribution Plot](images/filtered_neighbors_nebula_ipfs_19604.png "Degree Distribution")
 
 
+Now we will view the ratio of direct neighbors among all nodes at each specific degree.
 
 
 ![Degree Distribution Plot](images/filtered_direct_neighbor_ratio_nebula_ipfs_19604.png
  "Degree Distribution")
 
+We can see that in the degree range with the highest frequency the out-degree dominates the in-degree.
+This means that most of the users are sending to other nodes rather than receiving from them.  
+In the rest of the degree range there are more fluctuations in the out-degree ratio.
 
+In order to obtain more information about this frequency bump we observe in degree range $[50, 80]$, we will proceede computing some of the centralization metrics we used before. 
+Starting with IP-Address Centralization, we will extract the address prefixes as before and compute the number of peers and gini coefficient.
+
+
+| Category  | Gini Coefficient | Number of Peers |
+|-----------|------------------|-----------------|
+| Whole     | 0.509            | 53851           |
+| Filtered  | 0.215            | 1473            |
+
+
+As we can see in the Table, the filtered dataset is still bigger the avail mainnet we saw in Table \ref{tab:avg_gini_nodes}. However the Gini Coefficient is lower, meaning lower inequality in the address prefixes. 
+
+So despite having more peers, this subset of the IPFS network has more variety of IP address prefixes.
+
+
+Another question that arises looking at the frequency bump is if it corresponds to a subnetwork disconnected from the rest. To address this question we will extract all nodes the subset in the degree range $[50, 80]$ are connected to. If the subset is well integrated in the network, they should reach almost all nodes.
+
+We will take the subset of nodes plus their neighbors and dispay the resulting degree-frequency plot. Depending on how similar it looks to the original plot we can determine how close this subset is to the whole network.
