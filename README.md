@@ -371,3 +371,17 @@ So despite having more peers, this subset of the IPFS network has more variety o
 Another question that arises looking at the frequency bump is if it corresponds to a subnetwork disconnected from the rest. To address this question we will extract all nodes the subset in the degree range $[50, 80]$ are connected to. If the subset is well integrated in the network, they should reach almost all nodes.
 
 We will take the subset of nodes plus their neighbors and dispay the resulting degree-frequency plot. Depending on how similar it looks to the original plot we can determine how close this subset is to the whole network.
+
+The original plot of that crawl looks as follows:
+
+![Degree Distribution Plot](images/neighbors_nebula_ipfs_19604.png
+ "Degree Distribution")
+
+ While for the subset of nodes and their neighbors it looks like this:
+
+ ![Degree Distribution Plot](images/relevant_neighbors_degree_range_50_80_nebula_ipfs_19604.png
+ "Degree Distribution")
+
+ As we see, both plots are almost identical, seflecting the strong conectivity of the subset of nodes causing the frequency bump.
+
+
