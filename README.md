@@ -342,3 +342,10 @@ To simplify the analysis we will focus on one crawl.
 
 ![Degree Distribution Plot](images/filtered_neighbors_nebula_ipfs_19604.png "Degree Distribution")
 
+
+
+
+![Degree Distribution Plot](images/filtered_direct_neighbor_ratio_nebula_ipfs_19604.png
+ "Degree Distribution")
+
+
