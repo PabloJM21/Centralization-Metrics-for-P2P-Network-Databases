@@ -292,12 +292,12 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 ### 2. **Latency-Based Distribution**
 
 
-| **Database**             | **Normalized Entropy** |
-|--------------------------|------------------------|
-| nebula_filecoin          | 0.823                  |
-| nebula_polkadot          | 0.842                  |
-| nebula_avail_mainnet     | 0.715                  |
-| nebula_ipfs              | 0.932                  |
+| **Database**             | **Normalized Entropy** | **Number of Peers** |
+|--------------------------|------------------------|---------------------|
+| nebula_filecoin          | 0.823                  |     54234.8         |
+| nebula_polkadot          | 0.842                  |     2697.2          |
+| nebula_avail_mainnet     | 0.715                  |     8582.6          |
+| nebula_ipfs              | 0.932                  |     855.8           |
 
 
 ### 3. **Country Centralization**
