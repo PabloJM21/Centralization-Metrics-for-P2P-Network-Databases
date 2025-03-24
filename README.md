@@ -196,60 +196,8 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 
 
-### IPFS frequency bump
-
-In this section we will study the IPFS networks in more detail paying special attention to the frequency bump in the range $[50,80]$.
-
-We will start by studying the in-degree, which is the proportion of direct neighbors among all the nodes present.
-
-The neighbor type of each node, whether direct or reversed, might give information about the function of that node.
-For example, nodes without reversed neighbors likely act as clients that connect exclusively to a few other nodes acting as providers.
-At each degree we will show the frequency as before, but also the out-degree ratio.
-
-To simplify the analysis we will focus on one crawl.
-
-![Degree Distribution Plot](images/filtered_neighbors_nebula_ipfs_19604.png "Degree Distribution")
+### Radar Chart
 
 
-Now we will view the ratio of direct neighbors among all nodes at each specific degree.
-
-
-![Degree Distribution Plot](images/filtered_direct_neighbor_ratio_nebula_ipfs_19604.png
- "Degree Distribution")
-
-We can see that in the degree range with the highest frequency the out-degree dominates the in-degree.
-This means that most of the users are sending to other nodes rather than receiving from them.  
-In the rest of the degree range there are more fluctuations in the out-degree ratio.
-
-In order to obtain more information about this frequency bump we observe in degree range $[50, 80]$, we will proceede computing some of the centralization metrics we used before. 
-Starting with IP-Address Centralization, we will extract the address prefixes as before and compute the number of peers and gini coefficient.
-
-
-| Category  | Gini Coefficient | Number of Peers |
-|-----------|------------------|-----------------|
-| Whole     | 0.509            | 53851           |
-| Filtered  | 0.215            | 1473            |
-
-
-As we can see in the Table, the filtered dataset is still bigger than the avail mainnet we saw before. However the Gini Coefficient is lower, meaning lower inequality in the address prefixes. 
-
-So despite having more peers, this subset of the IPFS network has more variety of IP address prefixes.
-
-
-Another question that arises looking at the frequency bump is if it corresponds to a subnetwork disconnected from the rest. To address this question we will extract all nodes the subset in the degree range $[50, 80]$ are connected to. If the subset is well integrated in the network, they should reach almost all nodes.
-
-We will take the subset of nodes plus their neighbors and dispay the resulting degree-frequency plot. Depending on how similar it looks to the original plot we can determine how close this subset is to the whole network.
-
-The original plot of that crawl looks as follows:
-
-![Degree Distribution Plot](images/neighbors_nebula_ipfs_19604.png
- "Degree Distribution")
-
- While for the subset of nodes and their neighbors it looks like this:
-
- ![Degree Distribution Plot](images/relevant_neighbors_degree_range_50_80_nebula_ipfs_19604.png
- "Degree Distribution")
-
- As we see, both plots are almost identical, seflecting the strong conectivity of the subset of nodes causing the frequency bump.
 
 
