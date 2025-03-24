@@ -126,19 +126,19 @@ total number of elements \( n \).
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_polkadot.png "Degree Distribution")
 
-**Degree Centralization** : 0.753
+
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_avail_mainnet.png "Degree Distribution")
 
-**Degree Centralization** : 0.603
+
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_filecoin.png "Degree Distribution")
 
-**Degree Centralization** : 0.808
+
 
 ![Degree Distribution Plot](images/bins_degree_distribution_nebula_ipfs.png "Degree Distribution")
 
-**Degree Centralization** : 0.884
+
 
 #### Degree Centralization
 
