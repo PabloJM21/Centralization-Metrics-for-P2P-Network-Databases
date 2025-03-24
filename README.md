@@ -12,14 +12,7 @@ The analysis helps to identify potential centralization bottlenecks in P2P overl
 
 ## Metrics Overview
 
-### 1. **Degree Distribution**
-**Purpose**: Measures the connectivity of nodes in the P2P network.  
-- Nodes with higher degrees are more central, potentially serving as hubs in the network.  
-- **Steps**:
-  1. Extract the neighbors of each node.
-  2. Calculate the degree of each node (number of neighbors).
-  3. Analyze the frequency distribution of node degrees.
-  4. Calculate the **degree centrality** of the graph to assess centralization.
+
   
 #### Degree Centrality in Undirected Graphs
 
@@ -75,17 +68,10 @@ This normalizes the centralization score to a value between 0 and 1, where:
 
 ---
 
-### 2. **Latency-Based Distribution**
-**Purpose**: Analyzes centralization based on the uptime of the nodes during dialing.  
-- Nodes with low dial durations indicate connectivity issues.
-- Networks with a high variance in dial durations indicate inconsistency in the reliability of the nodes.  
-- **Steps**:
-  1. Compute average latency (e.g.`dial_duration`) for each node.
-  2. Compute the Entropy-Based Centrality of these latencies.
    
-#### Entropy-Based Centrality
+#### Shannon Entropy 
 
-Entropy-Based Centrality measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network. It uses **Shannon Entropy** to quantify whether the distribution is even or centralized.
+**Shannon Entropy** measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network and determines if it is even or centralized.
 
 #### Formula
 Normalize the quantity $x_i$ for node $i$:
@@ -110,22 +96,7 @@ H_{\text{normalized}} = \frac{H}{\log(n)}
 
 ---
 
-### 3. **Country Centralization**
-
-**Purpose**: Analyzes how nodes in the network are distributed across countries
-
-- **Steps**:  
-  1. **Extract Countries**   
-  2. **Count Country Frequencies**: Compute the number of nodes associated with each country.  
-  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in country frequencies.
- 
-  
-
-
-
-
-
-### **Steps to Compute the Gini Coefficient**
+**Gini Coefficient**
 
 The following outlines the step-by-step process for calculating the Gini coefficient:
 
