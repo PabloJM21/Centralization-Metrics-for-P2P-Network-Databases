@@ -196,7 +196,7 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 ---
 
-### Radar Chart
+### 6. Radar Chart
 
 
 ![Radar Chart Plot](images/radar_chart.png "Radar Chart")
