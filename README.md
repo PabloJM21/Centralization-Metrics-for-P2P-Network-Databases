@@ -98,57 +98,21 @@ p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 
 The Gini coefficient is computed based on the Weighted Sum and Denominator:
 
-```math
-\text{Weighted Sum} = \sum_{i=1}^{n} (2i - n - 1) \cdot x_i
-```
 
-
-
-```math
-\text{Denominator} = n \cdot \sum_{i=1}^{n} x_i
-```
-
-
-
-
-
-Calculate the Gini Coefficient
 ```math
 G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
 
+where:
+
+total number of elements \( n \).
+
+```math
+  n = \text{len}(x)
+```
 
 
 
-
----
-
-### 4. **IP Address Centralization**
-
-**Purpose**: Analyzes how nodes in the network are distributed across IPv4 and IPv6 address prefixes.  
-
-- **Centralization in Address Prefixes**:  
-  IP address prefixes represent logical groupings of addresses, reflecting how networks are allocated across geographical regions or organizations. Centralization in these prefixes can reveal the extent to which network traffic or resources are concentrated within a few address ranges.  
-
-- **Steps**:  
-  1. **Extract Address Prefixes**:  
-      - For IPv4 addresses, extract the `/24` prefix (e.g., `192.168.1.x`). This is used to represent the network portion of the address while the last part often 
-        represents the specific host in the sub-network.
-      - For IPv6 addresses, extract the `/48` prefix (e.g., `2001:db8:abcd`). This represents the network prefix
-            and is used to group addresses into subnets. The last part often represent the specific interface
-  2. **Count Prefix Frequencies**: Compute the number of nodes associated with each prefix.  
-  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in prefix frequencies.   
-
-### 5. ASN centralization
-
-Autonomous System Numbers are a set of Internet routable IP prefixes representing a collection of networks that are all controlled by a single entity.
-
-**Purpose**: Analyzes how nodes in the network are distributed across ASNs.
-
-- **Steps**:  
-  1. **Extract ASNs**   
-  2. **Count ASN Frequencies**: Compute the number of nodes associated with each ASN.  
-  3. **Quantify Centralization**: Apply Gini Coefficient metric to measures inequality in ASN frequencies.
 
 ---
 
