@@ -16,10 +16,8 @@ The analysis helps to identify potential centralization bottlenecks in P2P overl
   
 #### Degree Centrality in Undirected Graphs
 
-Degree centrality measures how many direct connections (or edges) a node in a graph has relative to the maximum possible number of connections. Below is the step-by-step explanation for computing degree centrality in this context:
+Degree centrality measures how many direct connections (or edges) a node in a graph has relative to the maximum possible number of connections. Below is the step-by-step explanation for computing degree centrality in this context.
 
-
-#### **Graph Setup**
 Consider an undirected graph $G = (V, E)$, where:
 - $V$: set of nodes (vertices).
 - $E$: set of edges connecting nodes in $V$.
@@ -49,7 +47,7 @@ C_D(i) = \frac{d(i)}{N - 1}
 #### **Degree Centralization**
 Degree centralization measures the inequality of degree centrality across all nodes in the graph. It captures how central the most connected node is relative to others.
 
-#### Formula:
+
 ```math
 C^* = \frac{\sum_{i=1}^{N} \left( C_{\text{max}} - C_D(i) \right)}{(N - 1)(C_{\text{max}} - 0)}
 ```
@@ -71,21 +69,21 @@ This normalizes the centralization score to a value between 0 and 1, where:
    
 #### Shannon Entropy 
 
-**Shannon Entropy** measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network and determines if it is even or centralized.
+Measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network and determines if it is even or centralized.
 
-#### Formula
-Normalize the quantity $x_i$ for node $i$:
-```math
-p_i = \frac{x_i}{\sum_{j=1}^n x_j}
-```
 
-Compute entropy:
 ```math
 H = -\sum_{i=1}^n p_i \cdot \log(p_i)
 ```
 
 ```math
 H_{\text{normalized}} = \frac{H}{\log(n)}
+```
+
+where 
+
+```math
+p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 ```
 
 #### Interpretation
@@ -98,79 +96,7 @@ H_{\text{normalized}} = \frac{H}{\log(n)}
 
 **Gini Coefficient**
 
-The following outlines the step-by-step process for calculating the Gini coefficient:
-
-
-#### **Flatten the Array**
-
-
-Ensure the input is a 1D array.
-
-  ```math
-  x = [x_1, x_2, \dots, x_n]
-  ```
-
-
-
-#### **Handle Negative Values**
-
-
-Adjust the array to remove any negative values.
-
-  ```math
-  x_i = x_i - \min(x) \quad \forall \, x_i \in x
-  ```
-
-
-
-#### **Avoid Zero Values**
-
-
-Add a small constant (\( \epsilon \)) to prevent division errors or issues with zeros.
-
- 
-  ```math
-  x_i = x_i + \epsilon \quad \forall \, x_i \in x
-  ```
-
-
-
-#### **Sort the Array**
-
-
-Sort the array in ascending order.
-
-```math
-x_1 \leq x_2 \leq \ldots \leq x_n
-```
-
-
-
-#### **Compute Index Values**
-
-
-Assign indices \( i \) to each sorted element.
-
-```math
-\text{index} = [1, 2, \dots, n]
-```
-
-
-
-#### **Total Number of Elements**
-
-Get the total number of elements \( n \).
-
-```math
-  n = \text{len}(x)
-```
-
-
-
-
-Compute Weighted Sum and Denominator
-
-
+The Gini coefficient is computed based on the Weighted Sum and Denominator:
 
 ```math
 \text{Weighted Sum} = \sum_{i=1}^{n} (2i - n - 1) \cdot x_i
@@ -178,10 +104,12 @@ Compute Weighted Sum and Denominator
 
 
 
-
 ```math
 \text{Denominator} = n \cdot \sum_{i=1}^{n} x_i
 ```
+
+
+
 
 
 Calculate the Gini Coefficient
