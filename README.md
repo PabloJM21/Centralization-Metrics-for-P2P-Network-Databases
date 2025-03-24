@@ -194,7 +194,7 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 | nebula_polkadot         | 0.986            | 8582.6          |
 | nebula_avail_mainnet    | 0.819            | 855.8           |
 
-
+---
 
 ### Radar Chart
 
