@@ -6,7 +6,19 @@ This project analyzes the centralization of peer-to-peer (P2P) networks using di
 - `nebula_avail_mainnet`
 - `nebula_filecoin`
 
+---
 
+
+## Project Directory Structure
+
+```plaintext
+Centralization-Metrics-for-P2P-Network-Databases/
+├── code/
+│   ├── raw_data.json                  # Raw data extracted from the API
+│   └── processed/                     # Processed CSV files
+├──images/                             # All generated images
+                 
+```
 
 ---
 
