@@ -1,12 +1,12 @@
 # Centralization Metrics for P2P Network Databases
 
-This project analyzes the centralization of peer-to-peer (P2P) networks using three key metrics: **Degree Distribution**, **Latency-Based Distribution**, and **ISP Centralization**. The metrics are computed for the following databases:
+This project analyzes the centralization of peer-to-peer (P2P) networks using different centralization metrics. The networks correspond to the following databases:
 - `nebula_ipfs`
 - `nebula_polkadot`
 - `nebula_avail_mainnet`
 - `nebula_filecoin`
 
-The analysis helps to identify potential centralization bottlenecks in P2P overlays and provides insights into the distribution of network resources.
+
 
 ---
 
@@ -69,7 +69,7 @@ This normalizes the centralization score to a value between 0 and 1, where:
    
 #### Shannon Entropy 
 
-Measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network and determines if it is even or centralized.
+Shannon Entropy measures the distribution of a continuous quantity (e.g., crawl durations) across nodes in a network and determines if it is even or centralized.
 
 
 ```math
@@ -96,21 +96,14 @@ p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 
 **Gini Coefficient**
 
-The Gini coefficient is computed based on the Weighted Sum and Denominator:
+The Gini coefficient measures the inequality among the values of a frequency distribution. It is computed based on the Weighted Sum and Denominator:
 
 
 ```math
 G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - n - 1) \cdot x_i}{n \cdot \sum_{i=1}^{n} x_i}
 ```
 
-where:
-
-total number of elements \( n \).
-
-```math
-  n = \text{len}(x)
-```
-
+where \( n \) is the total number of elements.
 
 
 
