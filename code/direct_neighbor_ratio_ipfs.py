@@ -75,20 +75,6 @@ try:
             .reset_index()
     )
 
-    # Plot degree vs frequency (already defined)
-    plt.figure(figsize=(12, 6))
-    plt.plot(degree_distribution['degree'], degree_distribution['frequency'],
-             marker='o', label=f"Crawl {specific_crawl_id}")
-
-    plt.title(f"Neighbors Distribution for Crawl {specific_crawl_id}", fontsize=16)
-    plt.xlabel("Degree (Number of Neighbors)", fontsize=12)
-    plt.ylabel("Frequency", fontsize=12)
-    plt.grid(True)
-    plot_filename = f"neighbors_{database}_{specific_crawl_id}.png"
-    plt.tight_layout()
-    plt.savefig(plot_filename)
-    print(f"Bar chart saved as {plot_filename}")
-    plt.show()
 
     # Plot degree vs reverse ratio
     plt.figure(figsize=(12, 6))
