@@ -14,8 +14,13 @@ This project analyzes the centralization of peer-to-peer (P2P) networks using di
 ```plaintext
 Centralization-Metrics-for-P2P-Network-Databases/
 ├── code/
-│   ├── raw_data.json                  # Raw data extracted from the API
-│   └── processed/                     # Processed CSV files
+│   ├── address_prefix_gini.py        #Computes the gini coefficient of the IP Address prefixes
+│   ├── asn_gini.py                   #Computes the gini coefficient of the autonomous system numbers
+│   ├── country_gini.py               #Computes the gini coefficient of the country distribution
+│   ├── degree_centrality.py          #Computes the in, out and combined degree centralization for each network 
+│   ├── degree_plot.py                #Outputs the degree plot for each network. The database name has to be specified in the script
+│   ├── dial_duration_entropy.py      #Computes the dial duration entropy
+│   ├── radar_chart.py                #Outputs the radar chart for all metrics
 ├──images/                             # All generated images
                  
 ```
