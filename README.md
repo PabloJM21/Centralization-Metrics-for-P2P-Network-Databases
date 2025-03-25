@@ -21,6 +21,7 @@ Centralization-Metrics-for-P2P-Network-Databases/
 │   ├── degree_plot.py                #Outputs the degree plot for each network. The database name has to be specified in the script
 │   ├── dial_duration_entropy.py      #Computes the dial duration entropy
 │   ├── radar_chart.py                #Outputs the radar chart for all metrics
+│   ├── direct_neighbor_ratio_ipfs.py
 ├──images/                             # All generated images
                  
 ```
