@@ -210,5 +210,12 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 ### 6. Radar Chart
 
 
+## In progress
+
+### Direct Neighbor Ratio
+
+I noticed that there is a bump in the IPFS degree distribution among the nodes with lower degrees. 
+
+
 ![Radar Chart Plot](images/radar_chart.png "Radar Chart")
 
