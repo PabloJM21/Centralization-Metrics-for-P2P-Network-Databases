@@ -21,7 +21,7 @@ Centralization-Metrics-for-P2P-Network-Databases/
 │   ├── degree_plot.py                #Outputs the degree plot for each network. The database name has to be specified in the script
 │   ├── dial_duration_entropy.py      #Computes the dial duration entropy
 │   ├── radar_chart.py                #Outputs the radar chart for all metrics
-│   ├── direct_neighbor_ratio_ipfs.py
+│   ├── direct_neighbor_ratio_ipfs.py #Outputs the out-degree proportion for all node degrees
 ├──images/                             # All generated images
                  
 ```
@@ -168,10 +168,12 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 | **Database**             | **Normalized Entropy** | **Number of Peers** |
 |--------------------------|------------------------|---------------------|
-| nebula_filecoin          | 0.823                  |     54234.8         |
-| nebula_polkadot          | 0.842                  |     2697.2          |
-| nebula_avail_mainnet     | 0.715                  |     8582.6          |
-| nebula_ipfs              | 0.932                  |     855.8           |
+| nebula_ipfs              | 0.932                  |     54234.8         |
+| nebula_filecoin          | 0.823                  |     2697.2          |
+| nebula_polkadot          | 0.842                  |     8582.6          |
+| nebula_avail_mainnet     | 0.715                  |     855.8           |
+
+As we can see 
 
 
 ### 3. **Country Centralization**
@@ -214,11 +216,18 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 ## In progress
 
-### Direct Neighbor Ratio
+### Out-Degree Ratiovof the IPFS Database
 
-To investigate the health of teh IPFS database I decided to focus on a specific crawl and analyze the proportion of out-degree connections of the nodes. 
+To investigate the health of the IPFS database I decided to focus on a specific crawl and analyze the proportion of out-degree connections of the nodes. 
 
 The resulting distribution shows that the nodes with fewer connections have mostly out-degree connections, while nodes with many connections are mostly in-degree.
+
+### Degree of failing peers for the IPFS Database
+
+In order to continue with the health analysis I decided to investigate the connections of the failing nodes. If important nodes with many connections are failing this compromises the health of the database. 
+
+
+As we can see
 
 
 
