@@ -213,7 +213,7 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 ![Radar Chart Plot](images/radar_chart.png "Radar Chart")
 
-As we can see, the IPFS database 
+As we can see, the avail_mainnet database exhibits the lowest centralization in all metrics.
 
 ## In progress
 
