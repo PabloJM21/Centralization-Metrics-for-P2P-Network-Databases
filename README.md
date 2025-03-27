@@ -209,13 +209,18 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 ### 6. Radar Chart
 
+![Radar Chart Plot](images/radar_chart.png "Radar Chart")
+
 
 ## In progress
 
 ### Direct Neighbor Ratio
 
-I noticed that there is a bump in the IPFS degree distribution among the nodes with lower degrees. 
+To investigate the health of teh IPFS database I decided to focus on a specific crawl and analyze the proportion of out-degree connections of the nodes. 
+
+The resulting distribution shows that the nodes with fewer connections have mostly out-degree connections, while nodes with many connections are mostly in-degree.
 
 
-![Radar Chart Plot](images/radar_chart.png "Radar Chart")
+
+
 
