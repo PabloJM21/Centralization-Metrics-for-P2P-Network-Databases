@@ -22,7 +22,7 @@ Centralization-Metrics-for-P2P-Network-Databases/
 │   ├── dial_duration_entropy.py      #Computes the dial duration entropy
 │   ├── radar_chart.py                #Outputs the radar chart for all metrics
 │   ├── direct_neighbor_ratio_ipfs.py #Outputs the out-degree proportion for all node degrees
-├──images/                             # All generated images
+├──images/                             # All generated images and dataframes
                  
 ```
 
