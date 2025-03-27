@@ -224,7 +224,7 @@ The resulting distribution shows that the nodes with fewer connections have most
 
 ### Degree of failing peers for the IPFS Database
 
-In order to continue with the health analysis I decided to investigate the connections of the failing nodes. If important nodes with many connections are failing this compromises the health of the database. 
+In order to continue with the health analysis of the IPFS database I decided to investigate the connections of the failing nodes for the same crawl. If important nodes with many connections are failing this compromises the health of the database. 
 
 
 As we can see
