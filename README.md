@@ -173,7 +173,7 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 | nebula_polkadot          | 0.842                  |     8582.6          |
 | nebula_avail_mainnet     | 0.715                  |     855.8           |
 
-As we can see 
+ 
 
 
 ### 3. **Country Centralization**
@@ -213,6 +213,7 @@ As we can see
 
 ![Radar Chart Plot](images/radar_chart.png "Radar Chart")
 
+As we can see, the IPFS database 
 
 ## In progress
 
