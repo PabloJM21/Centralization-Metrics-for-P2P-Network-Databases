@@ -114,7 +114,7 @@ p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 
 **Gini Coefficient**
 
-The Gini coefficient measures the inequality among the values of a frequency distribution. It is computed based on the Weighted Sum and Denominator:
+The Gini coefficient measures the inequality among the values of a frequency distribution, hence a discrete quantity. It is computed based on the Weighted Sum and Denominator:
 
 
 ```math
