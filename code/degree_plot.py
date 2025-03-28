@@ -100,7 +100,7 @@ try:
     plt.grid(axis='y', linestyle='--', alpha=0.7)
 
     # Save and display the plot
-    plot_filename = f"bins_degree_distribution_{database}.png"
+    plot_filename = f"../images/bins_degree_distribution_{database}.png"
     plt.tight_layout()
     plt.savefig(plot_filename)
     
