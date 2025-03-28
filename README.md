@@ -110,8 +110,8 @@ p_i = \frac{x_i}{\sum_{j=1}^n x_j}
 ```
 
 #### Interpretation
-- **Higher Entropy**: $H_{\text{normalized}}=1$ indicates Uniform distribution across nodes. 
-- **Lower Entropy**: Centralized distribution dominated by a few nodes.
+- A higher entropy indicates Uniform distribution across nodes. 
+- A lower entropy indicates a centralized distribution dominated by a few nodes.
  
 
 
@@ -129,8 +129,8 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 where \( n \) is the total number of elements.
 
 #### Interpretation
-- **Higher Coefficient**: A Gini coefficient closer to 1 corresponds to an unequal frequency distribution.  
-- **Lower Coefficient**: A Gini coefficient closer to 0 indicates that all ocurrences have the same frequencies.
+- A Gini coefficient closer to 1 corresponds to an unequal frequency distribution.  
+- A Gini coefficient closer to 0 indicates that all ocurrences have the same frequencies.
  
 
 ---
