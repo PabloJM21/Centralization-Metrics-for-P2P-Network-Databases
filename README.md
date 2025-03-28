@@ -215,17 +215,17 @@ The table displays the degree centralization rate for the Outdegree, Indegree an
 
 ![Radar Chart Plot](images/radar_chart.png "Radar Chart")
 
-As we can see, the avail_mainnet database exhibits the lowest centralization in all metrics.
+As we can see, the avail_mainnet database exhibits the lowest centralization in all metrics. On the other hand, the ipfs network exhibits highest centralization in dial entropy, degree centralization, ASN and country gini indexes. Regarding IP address prefixes, it is overpassed by the polkadot and filecoin networks.
 
 ## In progress
 
 ### Out-Degree Ratio of the IPFS Database
 
-To investigate the health of the IPFS database I decided to focus on a specific crawl and analyze the proportion of out-degree connections of the nodes. 
+To assess the health of the IPFS database, I focused on a specific crawl and analyzed the proportion of out-degree connections among nodes. 
 
 ![Out-Degree Ratio Plot](images/direct_neighbor_ratio_nebula_ipfs_19604.png "Out-Degree Ratio")
 
-The resulting distribution shows that the nodes with fewer connections have mostly out-degree connections, while nodes with many connections are mostly in-degree.
+The resulting distribution reveals that nodes with fewer connections predominantly exhibit out-degree connections, whereas highly connected nodes primarily have in-degree connections. This suggests a structural pattern in which low-degree nodes function as clients, initiating connections with other peers, while high-degree nodes serve as hubs, receiving connections from multiple peers.
 
 ### Degree of unreachable peers for the IPFS Database
 
