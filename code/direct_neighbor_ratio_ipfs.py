@@ -91,7 +91,7 @@ try:
     plot_filename_ratio = f"direct_neighbor_ratio_{database}_{specific_crawl_id}.png"
     plt.tight_layout()
     plt.savefig(plot_filename_ratio)
-    print(f"Direct Neighbor Ratio chart saved as {plot_filename_ratio}")
+    print(f"../images/Direct Neighbor Ratio chart saved as {plot_filename_ratio}")
     plt.show()
 
 except Exception as e:
