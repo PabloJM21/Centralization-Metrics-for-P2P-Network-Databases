@@ -110,7 +110,7 @@ try:
     plt.grid(True)
 
     # Save and display the plot
-    plot_filename = f"unreachable_neighbors_{database}_{specific_crawl_id}.png"
+    plot_filename = f"../images/unreachable_neighbors_{database}_{specific_crawl_id}.png"
     plt.tight_layout()
     plt.savefig(plot_filename)
     print(f"Bar chart saved as {plot_filename}")
