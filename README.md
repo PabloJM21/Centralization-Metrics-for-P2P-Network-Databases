@@ -22,6 +22,8 @@ Centralization-Metrics-for-P2P-Network-Databases/
 │   ├── dial_duration_entropy.py      #Computes the dial duration entropy
 │   ├── radar_chart.py                #Outputs the radar chart for all metrics
 │   ├── direct_neighbor_ratio_ipfs.py #Outputs the out-degree proportion for all node degrees
+│   ├── degree_plot_unreachable_nodes.py #Outputs the degree plot of unreachable nodes 
+
 ├──images/                             # All generated images and dataframes
                  
 ```
@@ -217,18 +219,21 @@ As we can see, the avail_mainnet database exhibits the lowest centralization in 
 
 ## In progress
 
-### Out-Degree Ratiovof the IPFS Database
+### Out-Degree Ratio of the IPFS Database
 
 To investigate the health of the IPFS database I decided to focus on a specific crawl and analyze the proportion of out-degree connections of the nodes. 
 
+![Out-Degree Ratio Plot](images/direct_neighbor_ratio_nebula_ipfs_19604.png "Out-Degree Ratio")
+
 The resulting distribution shows that the nodes with fewer connections have mostly out-degree connections, while nodes with many connections are mostly in-degree.
 
-### Degree of failing peers for the IPFS Database
+### Degree of unreachable peers for the IPFS Database
 
-In order to continue with the health analysis of the IPFS database I decided to investigate the connections of the failing nodes for the same crawl. If important nodes with many connections are failing this compromises the health of the database. 
+In order to continue with the health analysis of the IPFS database I decided to investigate the connections of the unreachable nodes for the same crawl. If important nodes with many connections are failing this compromises the health of the database. 
 
+![unreachable peers Plot](images/unreachable_neighbors_nebula_ipfs_19604.png "failing peers")
 
-As we can see
+As we can see, the network is dominated with unreachable peers with very few connections, as these show the highest frequency. This hints that the overall health of the network appears well.
 
 
 
