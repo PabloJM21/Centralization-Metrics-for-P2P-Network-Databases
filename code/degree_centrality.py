@@ -138,6 +138,6 @@ for database in databases:
 
 # Save results to CSV
 results_df = pd.DataFrame(results)
-results_df.to_csv("centralization_results.csv", index=False)
+results_df.to_csv("../images/centralization_results.csv", index=False)
 
 print("Results saved to centralization_results.csv")
