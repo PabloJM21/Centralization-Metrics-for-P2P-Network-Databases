@@ -76,9 +76,12 @@ Where:
 - $C_{\text{max}}$: maximum degree centrality in the graph.
 - $C_D(i)$: degree centrality of node $i$.
 
-This normalizes the centralization score to a value between 0 and 1, where:
-- $C^* = 1$ indicates a star graph (one central node connected to all others).
-- $C^* = 0$ indicates a completely regular graph (e.g., all nodes have the same degree).
+This normalizes the centralization score to a value between 0 and 1
+
+#### Interpretation
+
+- A centralization equal to 1 indicates a star graph (one central node connected to all others).
+- A centralization equal to 0 indicates a completely regular graph (e.g., all nodes have the same degree).
 
 
 
@@ -125,7 +128,10 @@ G = \frac{\text{Weighted Sum}}{\text{Denominator}} = \frac{\sum_{i=1}^{n} (2i - 
 
 where \( n \) is the total number of elements.
 
-
+#### Interpretation
+- **Higher Coefficient**: A Gini coefficient closer to 1 corresponds to an unequal frequency distribution.  
+- **Lower Coefficient**: A Gini coefficient closer to 0 indicates that all ocurrences have the same frequencies.
+ 
 
 ---
 
