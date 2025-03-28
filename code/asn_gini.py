@@ -74,6 +74,6 @@ for database in databases:
 
 # Save the Gini coefficient results to a CSV file
 results_df = pd.DataFrame(results)
-output_filename = "asn_frequency_gini_results.csv"
+output_filename = "../images/asn_frequency_gini_results.csv"
 results_df.to_csv(output_filename, index=False)
 print(f"Results saved to {output_filename}")
