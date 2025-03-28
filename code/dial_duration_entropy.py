@@ -68,6 +68,6 @@ for database in databases:
 
 # Save the entropy results to a CSV file
 results_df = pd.DataFrame(results)
-output_filename = "avg_dial_duration_entropy_results.csv"
+output_filename = "../images/avg_dial_duration_entropy_results.csv"
 results_df.to_csv(output_filename, index=False)
 print(f"Results saved to {output_filename}")
