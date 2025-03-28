@@ -43,7 +43,7 @@ def create_radar_chart(data, title, save_path):
 
 # Main script
 def main():
-    file_path = "radar.csv"  # path to  CSV file
+    file_path = "../images/radar.csv"  # path to  CSV file
     save_path = "../images/radar_chart.png"  # save path for the plot
     data = load_data(file_path)
     create_radar_chart(data, "P2P Network Metrics Radar Chart", save_path)
