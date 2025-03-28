@@ -130,6 +130,6 @@ for database in databases:
 
 # Save the results to a CSV file
 results_df = pd.DataFrame(results)
-output_filename = "average_gini_coefficient_results.csv"
+output_filename = "../images/average_gini_coefficient_results.csv"
 results_df.to_csv(output_filename, index=False)
 print(f"Results saved to {output_filename}")
