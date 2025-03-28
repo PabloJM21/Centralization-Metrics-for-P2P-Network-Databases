@@ -233,7 +233,7 @@ In order to continue with the health analysis of the IPFS database I decided to 
 
 ![unreachable peers Plot](images/unreachable_neighbors_nebula_ipfs_19604.png "failing peers")
 
-As we can see, the network is dominated with unreachable peers with very few connections, as these show the highest frequency. This hints that the overall health of the network appears well.
+As we can see, the network is dominated by unreachable peers with very few connections, as these show the highest frequency. This hints that the overall health of the network appears well.
 
 
 
